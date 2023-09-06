@@ -150,7 +150,7 @@
         label = "Sys";
         bindings = <
                 	&kp PG_UP       &kp UP    		&kp PG_DN         &kp C_VOL_UP     		&kp C_BRI_UP    	&kp LG(LS(N4))
-        &trans   	&kp LEFT        &tdkp DOWN   	&kp RIGHT         &kp C_VOL_DN     		&kp C_BRI_DN  		&kp LG(LS(N3))   &trans
+        &trans   	&kp LEFT        &kp DOWN   	&kp RIGHT         &kp C_VOL_DN     		&kp C_BRI_DN  		&kp LG(LS(N3))   &trans
                                   &to 0      		&to 6           	&mt RSHIFT ENTER  	&mt RALT BSPC
         >;
         };

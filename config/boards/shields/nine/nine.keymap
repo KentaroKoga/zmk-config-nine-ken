@@ -106,7 +106,7 @@
                 label = "Base";
         bindings = <
                       &kp P						&kp L							&kp I                		&kp G								&kp C						&kp S
-            &kp A 		&hl_l LALT O		&hl_l LCTRL E     &hl_l LSHIFT U          &hl_r RSHIFT D    	&hl_r RGUI H		&hl_r RALT T     &hl_r RCTRL N
+            &kp A 		&hm_l LALT O		&hm_l LCTRL E     &hm_l LSHIFT U          &hm_r RSHIFT D    	&hm_r RGUI H		&hm_r RALT T     &hm_r RCTRL N
                                     	&mt LGUI SPACE		&to 1                 	&mt RSHIFT ENTER  	&mt RALT BSPC
         >;
         };

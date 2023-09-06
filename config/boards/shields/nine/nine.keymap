@@ -25,7 +25,7 @@
 #define NUM 4
 #define SYS 5
 #define FUN 6
-/ { 
+/ {
     combos {
       compatible = "zmk,combos";
       combo_BSPC {
@@ -65,7 +65,7 @@
 			};
     };
 
-    behaviors {
+  	behaviors {
         hm_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_L";
@@ -84,7 +84,7 @@
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <0 1 2 6 7 8 9>; // left hand
+        		hold-trigger-key-positions = <0 1 2 6 7 8 9>; // left hand
         };
     		td: tapdance {
             compatible = "zmk,behavior-hold-tap";
@@ -95,15 +95,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-  };
+  	};
 //                  0       1       2                   3       4           5
 //          6       7       8       9                   10      11          12          13
 //                          14      15                  16      17
        keymap {
                 compatible = "zmk,keymap";
-                
+
                 alpha1 {
-                label = "Base";
+        label = "Al1";
         bindings = <
                       &kp P						&kp L							&kp I                		&kp G								&kp C						&kp S
             &kp A 		&hm_l LALT O		&hm_l LCTRL E     &hm_l LSHIFT U          &hm_r RSHIFT D    	&hm_r RGUI H		&hm_r RALT T     &hm_r RCTRL N
@@ -111,7 +111,7 @@
         >;
         };
                 alpha2 {
-                label = "Al2";
+        label = "Al2";
         bindings = <
                     &mt LGUI SPACE      &kp TAB     &kp Y               &kp R       				&kp F         &kp Z
         &kp Q       &kp J       				&kp K       &kp X               &kp B       				&kp M         &kp W       &kp V
@@ -119,8 +119,8 @@
         >;
         };
 
-                sym1 {
-                label = "Code";
+                sm1 {
+        label = "Sm1";
         bindings = <
                     &kp EXCL    &kp HASH  	&kp AMPS                      &kp LBKT   					&kp LPAR     &kp LBRC
         &kp BSLH   &kp GRAVE    &kp TILDE   &kp CARET                     &kp RBKT       			&kp RPAR     &kp RBRC    &kp AT
@@ -128,8 +128,8 @@
         >;
         };
 
-        				sym2 {
-        label = "Punct";
+        				sm2 {
+        label = "Sm2";
         bindings = <
                     &trans    	&kp BSLH        &kp UNDER               &kp MINUS    				&kp PLUS    &trans
         &trans    	&kp CARET   &kp GRAVE       &kp PIPE             		&kp PRCNT    				&kp STAR    &kp EQUAL    &trans
@@ -147,7 +147,7 @@
         };
 
         				sys {
-        label = "Nav";
+        label = "Sys";
         bindings = <
                 	&kp PG_UP       &kp UP    		&kp PG_DN         &kp C_VOL_UP     		&kp C_BRI_UP    	&kp LG(LS(N4))
         &trans   	&kp LEFT        &tdkp DOWN   	&kp RIGHT         &kp C_VOL_DN     		&kp C_BRI_DN  		&kp LG(LS(N3))   &trans
@@ -156,12 +156,12 @@
         };
 
         				fun {
-        label = "Fn";
-            bindings = <
+        label = "Fun";
+        bindings = <
                 	&kp F9   	&kp F10   &kp F11          &kp F12   					&trans   				&trans
      		&kp F1    &kp F2   	&kp F3    &kp F4           &kp F5   					&kp F6   				&kp F7  &kp F8
                           	&to 0     &trans           &mt RSHIFT ENTER  	&mt RALT BSPC
-                >;
+        >;
         };
     };
 };

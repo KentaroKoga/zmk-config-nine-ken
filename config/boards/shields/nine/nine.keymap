@@ -131,8 +131,8 @@
         				sm2 {
         label = "Sm2";
         bindings = <
-                    			&td COMMA DOT    	&kp BSLH        &kp UNDER               &kp MINUS    				&kp PLUS    &trans
-        &td COMMA DOT    	&kp CARET   			&kp GRAVE       &kp PIPE             		&kp PRCNT    				&kp STAR    &kp EQUAL    &trans
+                    			&td COMMA DOT    	&kp BSLH        &kp UNDER               &kp MINUS    				&kp PLUS    &bt BT_NXT
+        &td COMMA DOT    	&kp CARET   			&kp GRAVE       &kp PIPE             		&kp PRCNT    				&kp STAR    &kp EQUAL    &bt BT_PRV
                                 &to 0      			&to 4                   &mt RSHIFT ENTER  	&mt RALT BSPC
         >;
         };
